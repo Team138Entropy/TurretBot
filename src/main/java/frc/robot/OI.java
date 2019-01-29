@@ -9,7 +9,7 @@ public class OI {
 
     public static class NykoController extends Joystick {
 
-        // Nyko buttons
+        // Buttons
         public static final int button1 = 1;
         public static final int button2 = 2;
         public static final int button3 = 3;
@@ -24,7 +24,7 @@ public class OI {
         public static final int leftStick = 12;
         public static final int rightStick = 13;
         
-        // Nyko axes
+        // Axes
         public static final int leftXAxis = 0;		// X Axis on Driver Station
         public static final int leftYAxis = 1;		// Y Axis on Driver Station
         public static final int rightYAxis = 2;	// Z Axis on Driver Station
