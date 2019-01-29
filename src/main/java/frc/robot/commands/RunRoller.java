@@ -11,7 +11,7 @@ public class RunRoller extends Command {
     }
 
     protected void execute() {
-        Robot.roller.set(OI.nykoController.isLeftTriggerDown());
+        Robot.roller.set(OI.nykoController.getRawButton(OI.NykoController.leftTrigger));
     }
 
     protected boolean isFinished() {

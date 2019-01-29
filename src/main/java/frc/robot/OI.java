@@ -34,10 +34,6 @@ public class OI {
             super(port);
         }
 
-        public boolean isLeftTriggerDown() {
-            return getRawButton(leftTrigger);
-        }
-
     }
     
     public static NykoController nykoController = new NykoController(nykoControllerPort);
