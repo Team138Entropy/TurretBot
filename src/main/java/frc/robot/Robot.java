@@ -10,6 +10,7 @@ package frc.robot;
 import frc.robot.subsystems.Roller;
 
 import edu.wpi.first.wpilibj.TimedRobot;
+import edu.wpi.first.wpilibj.command.Scheduler;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -21,6 +22,7 @@ import edu.wpi.first.wpilibj.TimedRobot;
 public class Robot extends TimedRobot {
 
   public static Roller roller = new Roller();
+  private static Scheduler scheduler = Scheduler.getInstance();
 
   /**
    * This function is run when the robot is first started up and should be
@@ -70,6 +72,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopPeriodic() {
+    scheduler.run();
   }
 
   /**
