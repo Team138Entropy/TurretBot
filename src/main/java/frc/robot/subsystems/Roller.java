@@ -16,7 +16,8 @@ public class Roller extends Subsystem {
         setDefaultCommand(new RunRoller());
     }
 
-    public synchronized void set(boolean on) {
+    public synchronized void set(boolean on, boolean reverse) {
+        rollerTalon.setInverted(reverse);
         rollerTalon.set(ControlMode.PercentOutput, on ? 0.25 : 0);
     }
 }

@@ -7,6 +7,7 @@
 
 package frc.robot;
 
+import frc.robot.subsystems.LineDetectorSerial;
 import frc.robot.subsystems.Roller;
 
 import edu.wpi.first.cameraserver.CameraServer;
@@ -23,7 +24,7 @@ import edu.wpi.first.wpilibj.command.Scheduler;
  * project.
  */
 public class Robot extends TimedRobot {
-
+    public static LineDetectorSerial serial = new LineDetectorSerial();
     public static Roller roller = new Roller();
     private static Scheduler scheduler = Scheduler.getInstance();
 
